@@ -1,3 +1,4 @@
+# DICTIONARY TO CREATE KEY:VALUE PAIRS
 morse = { 'A':'.-', 'B':'-...',
     'C':'-.-.', 'D':'-..', 'E':'.',
     'F':'..-.', 'G':'--.', 'H':'....',
@@ -15,9 +16,14 @@ morse = { 'A':'.-', 'B':'-...',
     '(':'-.--.', ')':'-.--.-'}
 
 
+# FUNCTION FOR USER TO INPUT
 def morse_code(usr_input):
+
+    # EMPTY VARIABLE TO ADD THE TRANSLATED INPUT INTO
     morse_output = ""
+    # FOR LOOP TO ITERATE THROUGH THE USERS INPUT
     for letter in usr_input:
+        # ADD MORE CODE USER INPUT TO EMPTY VARIABLE WITH A SPACE IN BETWEEN FOR CLARITY
         morse_output += morse[letter] + " "
     return f"{usr_input} in Morse Code is {morse_output}"
 
